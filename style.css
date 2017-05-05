@@ -1,0 +1,29 @@
+body {
+	background-image: url("http://peopledotcom.files.wordpress.com/2017/03/carolkaelson3.jpg?w=450");
+	padding: 20px;
+}
+
+
+#container {
+	
+    height: 50px;
+    background-color: lightgrey;
+    opacity: 0.75;
+}
+
+
+.letter {
+
+    background-color: cornflowerblue;
+    color: cornflowerblue;
+    width:25px;
+    height: 25px;
+    margin: 3px;
+    float: left;
+    
+}
+
+h1 {
+	background-color: yellow;
+	opacity: 0.65;
+}
