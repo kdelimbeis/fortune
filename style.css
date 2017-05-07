@@ -1,6 +1,8 @@
 body {
 	background-image: url("http://peopledotcom.files.wordpress.com/2017/03/carolkaelson3.jpg?w=450");
 	padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
