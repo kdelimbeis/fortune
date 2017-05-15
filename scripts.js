@@ -18,11 +18,15 @@ document.getElementById("submit2").addEventListener("click",function(){
 document.getElementById("submit3").addEventListener("click",function(){
 
     var mysolve = document.getElementById("solve").value;
-    alert("The answer is: " + myword + " and you answered: " + mysolve);
+   if (mysolve === myword) {
+    alert("Congratulations! That is the correct answer.")
+   } else {
+    alert("Sorry! Your answer is incorrect.")
+   }
 
     });
 
-var guess = 0;
+var guess = 2;
 function letterSearch(myletter) {
 	console.log(myletter);
 	if (splitword.indexOf(myletter) > -1)        
@@ -33,8 +37,16 @@ function letterSearch(myletter) {
         }
           
 	} else {
-        guess += 1;
-        alert("Sorry, maybe next time. Guess number " + guess + " is incorrect!");
+        if (guess === 2) {
+            alert("you have 2 guesses remaining")
+            guess -= 1
+        } else if (guess === 1) {
+            alert("your have 1 guess remaining")
+            guess -= 1
+        } else {
+            alert("wrong, game over for you")
+        }
+
         }
 	}
 
